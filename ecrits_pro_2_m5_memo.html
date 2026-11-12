@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fiche mémo — Le vocabulaire de la relation client à distance</title>
+<style>
+:root{--prune:#8C1E70;--prune-fonce:#5E1349;--prune-clair:#F4E6EE;--accent:#C77BAA;
+ --vert:#283C28;--gris:#3C3C3C;--gris-moyen:#8A7A85;--filet:#E8DCE5;--creme:#FAF6F8;
+ --ok:#2F7A4F;--ko:#B23B3B;--amb:#B5852A;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--creme);color:var(--gris);
+ font-family:"Nunito","Segoe UI",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.62}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px 60px}
+header.bandeau{background:var(--prune-fonce);color:#fff;padding:18px 0;border-bottom:4px solid var(--accent)}
+header.bandeau .wrap{padding-bottom:0}
+.chapitre{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#EAD3E3}
+.chapitre span{color:var(--accent);margin:0 6px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:27px;line-height:1.25;margin:8px 0 4px;color:#fff}
+.sous{color:#EAD3E3;font-size:14.5px;margin:0}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:20px;color:var(--prune-fonce);
+ margin:34px 0 0;padding-bottom:8px;border-bottom:2px solid var(--filet)}
+h2 .num{color:var(--accent);margin-right:8px}
+h3{font-size:15px;color:var(--vert);margin:20px 0 8px;letter-spacing:.02em}
+.carte{background:#fff;border:1px solid var(--filet);border-radius:10px;padding:20px 22px;margin:18px 0;
+ box-shadow:0 1px 2px rgba(94,19,73,.05)}
+.enc{background:var(--prune-clair);border-left:5px solid var(--prune);padding:14px 18px;
+ border-radius:0 8px 8px 0;margin:18px 0;font-size:15.2px}
+.enc .t{display:block;font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;
+ font-weight:800;color:var(--prune-fonce);margin-bottom:6px}
+.enc.al{background:#FBF4F4;border-left-color:var(--ko)}.enc.al .t{color:var(--ko)}
+.enc.ci{background:#FCF8F0;border-left-color:var(--amb)}.enc.ci .t{color:#8A6418}
+.situ{background:#FCF9FB;border:1px dashed var(--filet);border-radius:8px;padding:16px 18px;margin:16px 0;font-size:15.2px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.duo>div{background:#fff;border:1px solid var(--filet);border-radius:9px;padding:15px 17px;font-size:14.8px}
+.duo .h{font-weight:800;color:var(--prune-fonce);margin-bottom:7px;font-size:14.5px}
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.tri>div{background:#fff;border:1px solid var(--filet);border-radius:9px;padding:14px 15px;font-size:14.3px}
+.quad{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.quad>div{background:#fff;border:1px solid var(--filet);border-radius:9px;padding:12px 13px;font-size:13.6px}
+.quad .h{font-weight:800;color:var(--prune-fonce);margin-bottom:6px;font-size:13px;
+ text-transform:uppercase;letter-spacing:.04em}
+.tri .h{font-weight:800;color:var(--prune-fonce);margin-bottom:6px;font-size:13.5px;
+ text-transform:uppercase;letter-spacing:.05em}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.8px;background:#fff}
+th,td{border:1px solid var(--filet);padding:9px 12px;text-align:left}
+thead th{background:var(--prune-clair);color:var(--prune-fonce);font-size:13.5px}
+tbody th{font-weight:600;color:var(--gris)}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td,tr.tot th{background:#FBF3F8;font-weight:800;color:var(--prune-fonce)}
+.dl{display:inline-flex;align-items:center;gap:9px;background:var(--prune);color:#fff;text-decoration:none;
+ padding:11px 20px;border-radius:8px;font-weight:700;font-size:15px;margin:20px 0 4px}
+.dl:hover{background:var(--prune-fonce)}
+ol.q{padding-left:0;list-style:none;counter-reset:q}
+ol.q>li{margin:16px 0;padding-left:38px;position:relative}
+ol.q>li::before{counter-increment:q;content:counter(q);position:absolute;left:0;top:1px;
+ width:26px;height:26px;border-radius:50%;background:var(--prune-clair);color:var(--prune-fonce);
+ font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+b,strong{color:var(--vert)}
+footer{text-align:center;font-size:12.5px;color:var(--gris-moyen);padding:26px 18px 12px;
+ border-top:1px solid var(--filet);margin-top:44px}
+@media(max-width:860px){.quad{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.duo,.tri,.quad{grid-template-columns:1fr}h1{font-size:22px}}
+@media print{body{background:#fff}.dl{display:none}header.bandeau{background:#5E1349 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+td{vertical-align:top}td:first-child{white-space:nowrap}</style></head>
+<body>
+<header class="bandeau"><div class="wrap">
+ <div class="chapitre">Écrits professionnels 2/6 <span>/</span> Module 5</div><h1>Le vocabulaire de la relation client à distance</h1><p class="sous">Fiche mémo — les termes du métier et le mot du client</p>
+</div></header>
+<div class="wrap">
+<a class="dl" href="EP_2_M5_Fiche_memo.pdf" download>⬇ Télécharger la fiche mémo (PDF)</a>
+
+<h2><span class="num">1 ·</span>Deux registres, un seul objectif</h2>
+<div class="carte">
+<p>Le conseiller manie deux vocabulaires : le <b>terme du métier</b>, précis, qu'il emploie avec ses collègues et ses outils, et le <b>mot du client</b>, qui permet d'être compris. Un bon écrit client emploie le premier quand il le faut et l'explique avec le second.</p>
+<div class="enc"><span class="t">LA RÈGLE</span>Gardez le terme exact s'il a une portée juridique (rétractation, garantie, réclamation, données personnelles) et expliquez-le la première fois. Supprimez les sigles et les mots des outils internes.</div>
+</div>
+<h2><span class="num">2 ·</span>Le lexique de la relation client à distance</h2>
+<div class="carte">
+<table><thead><tr><th>Terme</th><th>Définition</th><th>Ce que l'on écrit au client</th></tr></thead><tbody><tr><td><b>Appel entrant (inbound)</b></td><td>Appel reçu par le centre, à l'initiative du client.</td><td>« votre appel », « lors de notre échange »</td></tr><tr><td><b>Appel sortant (outbound)</b></td><td>Appel passé par le conseiller vers un client ou un prospect : prospection, relance, enquête.</td><td>« je vous appelle au sujet de… »</td></tr><tr><td><b>Call back</b></td><td>Rappel du client au moment qu'il a choisi.</td><td>« je vous rappellerai mardi à 10 h, comme convenu »</td></tr><tr><td><b>SVI</b></td><td>Serveur vocal interactif : il accueille l'appelant et l'oriente grâce au clavier ou à la voix.</td><td>« notre standard automatique »</td></tr><tr><td><b>CRM</b></td><td>Logiciel de gestion de la relation client : il centralise l'historique des contacts, commandes et réclamations.</td><td>« votre dossier client »</td></tr><tr><td><b>Hotline, help desk</b></td><td>Service d'assistance, souvent téléphonique, qui aide le client à résoudre un problème technique.</td><td>« notre service d'assistance »</td></tr><tr><td><b>FAQ</b></td><td>Foire aux questions : les réponses aux questions les plus fréquentes, en ligne.</td><td>« les réponses aux questions fréquentes, sur notre site »</td></tr><tr><td><b>B to B, B to C</b></td><td>Relation d'une entreprise avec d'autres entreprises (B to B) ou avec des particuliers (B to C).</td><td>« les professionnels », « les particuliers »</td></tr><tr><td><b>NPAI</b></td><td>N'habite pas à l'adresse indiquée : le courrier ou le colis revient à l'expéditeur.</td><td>« le transporteur n'a pas trouvé le destinataire à l'adresse indiquée »</td></tr><tr><td><b>Avoir</b></td><td>Somme que l'entreprise doit au client et qu'il peut utiliser sur un prochain achat.</td><td>« un bon d'achat du même montant »</td></tr><tr><td><b>Droit de rétractation</b></td><td>Droit de renoncer à un achat à distance, sans motif, pendant 14 jours après la réception du bien.</td><td>« vous pouvez changer d'avis et renvoyer l'article pendant 14 jours »</td></tr><tr><td><b>Garantie légale de conformité</b></td><td>Garantie de 2 ans pour un bien neuf qui présente un défaut.</td><td>« votre article est garanti deux ans en cas de défaut »</td></tr><tr><td><b>RGPD</b></td><td>Règlement général sur la protection des données : il encadre la collecte et l'utilisation des données personnelles.</td><td>« la protection de vos données personnelles »</td></tr><tr><td><b>Opt-out</b></td><td>Choix du client de ne plus recevoir de sollicitations commerciales.</td><td>« vous ne recevrez plus nos offres, comme vous l'avez demandé »</td></tr><tr><td><b>Nursing call</b></td><td>Appel de suivi après une vente ou un incident, pour vérifier que le client est satisfait.</td><td>« je vous appelle pour m'assurer que tout s'est bien passé »</td></tr><tr><td><b>Question alternative</b></td><td>Question qui propose deux choix au client et fait avancer l'échange.</td><td>« préférez-vous être rappelé mardi ou jeudi ? »</td></tr></tbody></table>
+</div>
+
+<h2><span class="num">3 ·</span>Les confusions de mots à éviter</h2>
+<div class="carte">
+<table><thead><tr><th>Ne pas confondre</th><th>Avec</th></tr></thead><tbody><tr><td><b>différend</b> (un désaccord)</td><td>différent (adjectif : pas pareil)</td></tr><tr><td><b>confirmer</b> (rendre certain)</td><td>infirmer (dire le contraire)</td></tr><tr><td><b>patience</b> (le nom)</td><td>patiente (l'adjectif, ou une personne)</td></tr><tr><td><b>réclamation</b> (le client exprime son mécontentement)</td><td>récréation, proclamation</td></tr><tr><td><b>appel entrant</b> (le client appelle)</td><td>appel sortant (le conseiller appelle)</td></tr></tbody></table>
+</div>
+
+<h2><span class="num">4 ·</span>À retenir</h2>
+<div class="carte">
+<ol class="q"><li>Le terme exact se garde quand il a une valeur juridique — et il s'explique.</li><li>Aucun sigle interne dans un écrit client.</li><li>Les délais et montants s'écrivent en entier, avec leur point de départ.</li><li>Un client qui ne comprend pas un mot ne lit pas la phrase — et peut perdre un droit.</li></ol>
+</div>
+
+
+<footer>TMK Performances - N° Siret : 49841924100027 - Code NAF : 8559A</footer>
+</div>
+</body></html>
